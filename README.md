@@ -1,2 +1,3 @@
 # C-CLASS
-Hi
+EGradeBook
+AcceptDetails
