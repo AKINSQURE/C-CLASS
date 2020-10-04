@@ -18,10 +18,10 @@ namespace Assignment01
             EGradeBook b = new EGradeBook();
             Console.WriteLine(b.gradeB);
             b.AcceptDetails();
-            //Console.WriteLine(b)
-            //b.Display();
-            //b.GetAverage();
-            //Console.ReadLine();
+            Console.WriteLine(b);
+            b.Display();
+            b.GetAverage();
+            Console.ReadLine();
             
 
         
