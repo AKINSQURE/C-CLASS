@@ -15,45 +15,20 @@ namespace Assignment01
            
         static void Main(string[] args)
         {
-            //adonly val2 ;
-            var bb = new Program();
-double ee= MathLibrary.Add(new List<double> { 23.2, 47, 46, 23 });
-            Console.WriteLine(ee);
-           ///th.
-            //Console.WriteLine(ch("shupo"));
-            //Console.WriteLine(ch("tobi"));
-            //Console.WriteLine(ch("dapo"));
-            //Console.WriteLine(ch("tunde"));
+            EGradeBook b = new EGradeBook();
+            Console.WriteLine(b.gradeB);
+            b.AcceptDetails();
+            //Console.WriteLine(b)
+            //b.Display();
+            //b.GetAverage();
+            //Console.ReadLine();
+            
 
-            bool bola=12>34;
-            Console.WriteLine(ch(bola));
-            Console.WriteLine(ch(true));
+        
+     
+        }
 
-            // Array bolaw= new Array[2];
-            List<string> ddd =new List<string>();
-            ddd.Add("bolaji");
-            ddd.Add("bola");
-            ddd.Add("debi");
-            ddd.Add("tayo");
-
-            List<string> d = new List<string> { "bolaji", "bola", "debi", "tayo" };
-            List<string> dddds= new List<string>(){"olaji", "bola", "debi", "tayo" };
-            string bimbo = "tambolo";
-
-            for (int i = d.Count-1;i>=0;i-=2)
-            {
-                Console.WriteLine(ddd[i]);
-            }
-
-            foreach (var item in bimbo)
-            {
-                Console.WriteLine(item);
-            }
-            {
-                
-            }
-
-            char singleb = bimbo[0];
+           /* char singleb = bimbo[0];
             char lastchar = bimbo[6];
             char sastchar = bimbo[5];
             Console.WriteLine(lastchar);
@@ -149,7 +124,7 @@ public static int ch(bool istrue)
 
               double result;
               result = sgrade;
-              if (sScore /maxScore *100>=50 && sScore /maxScore *100 <=100)
+              if (sScore /maxScore *100>50 && sScore /maxScore *100 <=100)
               {
 
                   Console.WriteLine("Highest Grade");

@@ -6,40 +6,54 @@ namespace Assignment01
 {
     class EGradeBook
     {
-        public string studentName;
-        public string subjects;
-        public double scores;
-        public string grades;
-        public double total;
-        public double totalScore;
+        double gradeA;
+       public double gradeB;
+        double gradeC;
+        double gradeD;
 
+        public void AcceptDetails( )
 
-        public EGradeBook(string aStudentName, string aSubject, double aScores, string aGrade,double aTotal,double aTotalScore)
         {
-            studentName = aStudentName;
-            subjects = aSubject;
-            scores = aScores;
-            grades = aGrade;
-            total = aTotal;
-            totalScore = aTotalScore; ;
-            
+          //  double gradeA, gradeB, gradeC, gradeD;
+           gradeB=40;
+            Console.WriteLine(gradeB);
+          //  double gradeC;
+          //  double gradeD;
         }
-       
-        public void   aSubject( )
+        public double GetAverage(   )
         {
-            subjects = "English";
-            subjects = "Mathematics";
-            subjects = "Physics";
-            subjects = "Chemistry";
-            subjects = "Biology";
+            gradeA = 90.2;gradeB = 50.6;gradeC = 60.3;gradeD = 41.8;
+            return gradeA/4 + gradeB /4 + gradeC/4 + gradeD /4;
         }
 
-        //static double score(double num1 = 60.0, double  num2=75.0, double  num3=50.0, double  num4=80.0, double  num5=40.0)
-        //{
+        public bool GradeRange()
+        {
+            if (gradeA > gradeB && gradeA >gradeC && gradeA >gradeD )
+            {
+                return true ;
+                
+                //  Console.WriteLine("Gade A is the Highest score:" );
+            }else if (gradeD <gradeA && gradeD <gradeB && gradeA<gradeD )
+            {
+                return true;
+            }else 
+            {
+                return false;
+               // Console.WriteLine(" Grade D is the lowest score:");
+            }
 
-           
-        //}
+        }
+        public void   Display()
+        {
+            Console.WriteLine("GradeA: {0}", gradeA);
+            Console.WriteLine("GradeB: {0}", gradeB);
+            Console.WriteLine("GradeC: {0}", gradeC);
+            Console.WriteLine("GradeD: {0}", gradeD);
+            Console.WriteLine(" Average Grade: {0}", GetAverage( ));
+            Console.WriteLine("Highest Grade is grade A: {0}", GradeRange ());
+            Console.WriteLine("Lowest Grade is grade D: {0}", GradeRange());
 
-
+        }
     }
+ 
 }
